@@ -30,7 +30,7 @@ def draw_card(carte, x, y):
 
     label = {1: 'A', 11: 'J', 12: 'Q', 13: 'K'}.get(number, str(number))
     pyxel.text(x+2, y+2, label, color_border)
-    pyxel.text(x+longueur-6, y+hauteur-7, label, color_border)
+    pyxel.text(x + longueur - 2 - len(label) * 5, y+hauteur-7, label, color_border)
 
     pyxel.blt(x, y+8, 0, couleur_x, couleur_y, 16, 16, scale=0.4)
 
