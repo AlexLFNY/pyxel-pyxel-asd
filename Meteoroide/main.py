@@ -108,6 +108,7 @@ pyxel.images[0].set(70, 0, [
     "800000000000"
 ])
 
+
 def update():
     global loss, score_asteroid, speed_asteroids, radius_asteroids, spaceship_movement,y, x, centre_x, centre_y, cooldown, x_enemies, y_enemies, movement_enemy, win, score_enemy, movement_shooter, sc, vies, score_shooter, asteroid_cooldown, color_asteroids, immobilized, knockback,probability_of_special_event_happening, timer, death_timer
     timer-=1
