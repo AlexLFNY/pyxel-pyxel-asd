@@ -4,6 +4,41 @@ import time
 LARGEUR = 400
 HAUTEUR = 300
 pyxel.init(LARGEUR, HAUTEUR) #creation de la fenêtre
+
+pyxel.sounds[0].set(
+    "c3 e3 g3 b3 c4 r b3 g3", 
+    "p",                     
+    "6",    
+    "v",                 
+    20                      
+)
+
+pyxel.sounds[1].set(
+    "g1 f#1 f1 e1 g1 f#1 f1 e1", 
+    "s",                      
+    "6", 
+    "n", 
+    20                   
+)
+
+pyxel.sounds[2].set(
+    "c4 g4 e4 c4 r g4 c4 r",
+    "p",               
+    "4",                  
+    "f",                
+    20                        
+)
+
+pyxel.sounds[3].set(
+    "c1 r r r c1 r r r",
+    "n",      
+    "4", 
+    "s",                     
+    15
+)
+pyxel.music(0).set([0, 2], [1], [3], [])
+
+
 y= 290
 x= 200
 x_enemies = 100
@@ -345,5 +380,6 @@ def draw():
         pyxel.text(40,150, "UH OH! YOU HAVE BEEN HIT WITH THE MYSTERY ASTEROID... YOUR MOVEMENT HAS BEEN AFFECTED",7)
     elif immobilized > 0:
         pyxel.text(90,150, "YOU HAVE BEEN IMMOBILIZED DUE TO CRITICAL DAMAGES TO YOUR SPACECRAFT!",7)
+pyxel.playm(0, loop=True)
 
 pyxel.run(update,draw)
