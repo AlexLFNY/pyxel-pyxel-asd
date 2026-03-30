@@ -5,7 +5,7 @@ W, H = 160, 120
 pyxel.init(W, H, title="Moving Ship")
 
 
-pyxel.load("/Users/pierrepeuze/Desktop/computer science/Projet_final_v0.0.001.pyxres")
+pyxel.load("./Projet_final_v0.0.001.pyxres")
 
 
 pyxel.play(0, 0, loop=True)
